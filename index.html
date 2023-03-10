@@ -30,15 +30,17 @@
           <a class="home-page__card__plan__link"href="#">Change</a>
         </div>
 
-        <button onClick="window.location.href='https://lucky-souffle-85aca4.netlify.app/'" target="_blank" class="home-page__card__btn" type="button" href>Proceed to Payment</button></br>
+        <button class="home-page__card__btn" type="button">Proceed to Payment</button></br>
         <a class= "home-page__card__link" href="#">Cancel Order</a>
       </div>
     </div>
 
-    <script type="module" src="/src/global-scripts/main.js"></script>
-    <script
-      type="module"
-      src="/src/pages/home-page/scripts/home-page.js"
-    ></script>
+    <script>
+    home_page__card__btn = document.querySelector(".home-page__card__btn");
+
+home_page__card__btn.onclick = function () {
+  this.innerHTML = "<div class='home-page__card__btn__loader'></div>";
+};
+</script>
   </body>
 </html>
