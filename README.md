@@ -6,7 +6,7 @@ Order summary is the last step before making a purchase. It is here that the use
 Project is created with:
 * HTML
 * CSS/SCSS
-
+* JavaScript
 
 
 
