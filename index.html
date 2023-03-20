@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order summary</title>
+    <link rel="stylesheet" href="src/styles/styles/style.css" />
+  </head>
+
+  <!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
+
+  <body>
+    <div class="home-page">
+      <div class="home-page__card">
+       <div class="home-page__card__block-photo"> <img src="img/woman.png" /></div>
+        <h1>Order Summary</h1>
+        <p>
+          You're close! Confirm your purchase and complete your order in the
+          next step
+        </p>
+
+        <div class="home-page__card__plan">
+          <img src="img/music.png" />
+          <div class="home-page__card__plan__line">i</div>
+          <div class="home-page__card__plan__info">
+            <h2>Annual Plan</h2>
+            <p>$58.99 / year</p>
+          </div>
+          <a class="home-page__card__plan__link"href="#">Change</a>
+        </div>
+
+        <button class="home-page__card__btn" type="button">Proceed to Payment</button></br>
+        <a class= "home-page__card__link" href="#">Cancel Order</a>
+      </div>
+    </div>
+
+    <script>
+    home_page__card__btn = document.querySelector(".home-page__card__btn");
+
+home_page__card__btn.onclick = function () {
+  this.innerHTML = "<div class='home-page__card__btn__loader'></div>";
+};
+</script>
+  </body>
+</html>
